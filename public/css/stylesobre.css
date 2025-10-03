@@ -1,0 +1,208 @@
+/* Define as cores principais para a página */
+:root {
+    --azul: #1868c2;
+    --vinho: #b4043d;
+    --laranja: #f89c32;
+    --branco: white;
+    --txt: black;
+    --cinza-fundo: #f8f9fa; /* Um cinza bem claro para o fundo */
+}
+
+/* Corpo da página Sobre */
+.sobre-body {
+    background-color: var(--cinza-fundo); /* Fundo cinza claro */
+    font-family: Inter, system-ui, Arial, sans-serif;
+}
+
+/* Container principal que centraliza todo o conteúdo */
+.sobre-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem; /* Mais espaço interno */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Espaço entre as seções */
+}
+
+/* Estilo do cabeçalho "Hero" */
+.sobre-hero {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--branco);
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+}
+
+.sobre-hero .badge {
+    display: inline-block;
+    background: var(--azul);
+    color: var(--branco);
+    border: 2px solid var(--laranja);
+    outline: 1px solid var(--vinho);
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 999px;
+    margin-bottom: 1rem;
+}
+
+.sobre-hero h1 {
+    font-size: clamp(2rem, 5vw, 2.8rem); /* Tamanho de fonte responsivo */
+    color: var(--azul);
+    margin: 0.5rem 0 1rem;
+}
+
+.sobre-hero p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Grid responsivo para Missão, Visão e Valores */
+.missao-grid {
+    display: grid;
+    /* Cria colunas que se ajustam: no mínimo 300px, no máximo 1 fração do espaço */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.missao-card {
+    background: var(--branco);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+    border-left: 4px solid var(--laranja);
+}
+
+.missao-card h3 {
+    margin: 0 0 0.8rem;
+    color: var(--azul);
+    font-size: 1.5rem;
+}
+
+.missao-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Seção da História e Como Atuamos */
+.historia-section {
+    background: var(--branco);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+}
+
+.historia-section h3 {
+    text-align: center;
+    color: var(--azul);
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.historia-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+/* Linha do tempo */
+.timeline {
+    position: relative;
+    padding-left: 25px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 10px;
+    bottom: 10px;
+    width: 3px;
+    background: linear-gradient(var(--laranja), var(--vinho), transparent);
+    border-radius: 2px;
+}
+
+.step {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.step::before {
+    content: "";
+    position: absolute;
+    left: -4px;
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    background: var(--vinho);
+    border: 3px solid var(--branco);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.step strong {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+/* Card "Como Atuamos" */
+.atuamos-card {
+    background-color: var(--cinza-fundo);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+.atuamos-card h3 {
+    text-align: left;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.atuamos-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+.atuamos-card li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+/* Seção de Chamada para Ação (CTA) */
+.cta-card {
+    background: var(--azul);
+    color: var(--branco);
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+}
+
+.cta-card h3 {
+    font-size: 2rem;
+    margin: 0 0 1rem;
+}
+
+.cta-card p {
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    opacity: 0.9;
+}
+
+.btn-cta {
+    background: var(--laranja);
+    color: var(--branco);
+    padding: 14px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    border: 2px solid var(--laranja);
+}
+
+.btn-cta:hover {
+    background: var(--vinho);
+    border-color: var(--vinho);
+    transform: translateY(-3px);
+}

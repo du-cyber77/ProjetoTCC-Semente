@@ -1,0 +1,113 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+header .logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: red; /*não sei oq é*/
+}
+header .logo img {
+    width: 30px;
+    margin-right: 10px;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: red;  /*não sei oq é*/
+    font-weight: 500;
+}
+nav a.active {
+    border-bottom: 2px solid yellow;  /*não sei oq é*/
+}
+.buttons a {
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn-login {
+    background: transparent;
+    border: 1px solid #f89c32;
+    outline: 1px solid #b4043d;
+    color: white;
+}
+.btn-login:hover {
+    background: #b4043d;
+    transform: translateY(-2px);
+}
+.btn-register {
+    background: transparent;
+    border: 1px solid #f89c32;
+    outline: 1px solid #b4043d;
+    color: white;
+}
+.btn-register:hover {
+    background: #b4043d;
+    transform: translateY(-2px);
+}
+
+/* Conteúdo principal */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 30px 30px rgba(24, 104, 194, 0.2);
+    max-width: 500px;
+    width: 100%;
+}
+.form-container h1 {
+    text-align: center;
+    color: #1868c2;
+    margin-bottom: 20px;
+}
+.form-container label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #1868c2;
+}
+.form-container input, 
+.form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid #f89c32;
+    outline: 1px solid #b4043d;
+    transition: 0.3s;
+}
+.form-container input:focus,
+.form-container textarea:focus {
+    border: 2px solid #f89c32;
+    outline: 1px solid #b4043d;
+}
+.form-container button {
+    width: 100%;
+    padding: 14px;
+    background: white;
+    color: #1868c2;
+    border: 2px solid #1868c2;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.form-container button:hover {
+    background: #1868c2;
+    color: white;
+}

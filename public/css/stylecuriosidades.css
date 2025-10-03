@@ -1,0 +1,75 @@
+/* Container principal da página de curiosidades */
+.curiosidades-container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* Cabeçalho da página */
+.curiosidades-header {
+    margin-bottom: 2.5rem;
+}
+
+.curiosidades-header h1 {
+    font-size: 2.8rem;
+    color: #1868c2; /* Azul principal */
+    margin-bottom: 0.5rem;
+}
+
+.curiosidades-header p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Grid de cards */
+.curiosidades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Estilo individual de cada card */
+.curiosidade-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(24, 104, 194, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.curiosidade-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(24, 104, 194, 0.2);
+}
+
+/* Ícone do card */
+.curiosidade-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Título do card */
+.curiosidade-card h3 {
+    font-size: 1.5rem;
+    color: #1868c2;
+    margin-bottom: 0.8rem;
+}
+
+/* Texto do card */
+.curiosidade-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+}
+
+/* "Em breve" */
+.curiosidade-card span {
+    display: inline-block;
+    background-color: #f89c32; /* Laranja */
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}

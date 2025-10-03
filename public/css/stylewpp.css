@@ -1,0 +1,31 @@
+ /* botão flutuante */
+ .whatsapp-float {
+    position: fixed;
+    width: 70px;      /* tamanho maior */
+    height: 70px;     /* tamanho maior */
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 38px;  /* aumenta o ícone */
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* efeito hover */
+  .whatsapp-float:hover {
+    background-color: #1ebe57;
+    transform: scale(1.15) rotate(8deg); /* aumenta e gira levemente */
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.4);
+  }
+
+  /* ícone */
+  .whatsapp-float i {
+    margin-top: 2px;
+  }
