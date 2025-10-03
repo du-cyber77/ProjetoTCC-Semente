@@ -201,8 +201,8 @@ body {
 
 /* Sidebar */
 .sidebar {
-    width: 100%;
-    max-width: 350px;
+    width: 350px;       /* Define uma largura fixa */
+    flex-shrink: 0;   /* Impede que a sidebar diminua de tamanho */
     background: white;
     backdrop-filter: blur(10px);
     border-radius: 15px;
@@ -834,24 +834,9 @@ body {
 
 /* Tablets grandes e laptops pequenos */
 @media (max-width: 1024px) {
-    .container {
-        flex-direction: column;
-    }
-    
-    .sidebar {
-        max-width: 100%;
-        order: 2;
-    }
-    
-    .map-container {
-        order: 1;
-        min-height: 450px;
-    }
-    
-    .stats-grid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    }
+    /* Regras removidas para manter o layout lado a lado */
 }
+
 
 /* Tablets */
 @media (max-width: 768px) {
@@ -859,6 +844,10 @@ body {
         font-size: 15px;
     }
     
+    .map-container {
+        order: 1;
+    }
+
     .header {
         flex-direction: column;
         gap: 1rem;
@@ -877,13 +866,12 @@ body {
     }
     
     .container {
-        padding: 0.75rem;
-        gap: 1rem;
+        flex-direction: column;
     }
     
-    .sidebar {
-        padding: 1.25rem;
-        max-height: none;
+   .sidebar {
+        width: 100%; /* Faz a sidebar ocupar a largura toda no celular */
+        order: 2;
     }
     
     .stats-grid {
@@ -1047,10 +1035,7 @@ body {
 
 /* Melhorias para telas muito largas */
 @media (min-width: 1440px) {
-    .container {
-        max-width: 1400px;
-        margin: 0 auto;
-    }
+   
     
     .header {
         max-width: 100%;

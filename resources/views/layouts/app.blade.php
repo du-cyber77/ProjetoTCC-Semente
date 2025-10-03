@@ -43,9 +43,9 @@
     </header>
 
     {{-- Conteúdo principal da página --}}
-    <main>
-        @yield('content')
-    </main>
+   <main class="@if(request()->is('contato')) contact-page-main @endif">
+    @yield('content')
+</main>
 
     {{-- Rodapé --}}
     <footer>

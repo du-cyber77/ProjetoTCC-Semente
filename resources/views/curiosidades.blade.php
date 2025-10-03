@@ -1,5 +1,20 @@
 @extends('layouts.app')
 
+{{-- Botões que vão aparecer no cabeçalho --}}
+@section('header-buttons')
+    <div class="auth-section">
+        <div class="auth-buttons" id="authButtons">
+        <button class="auth-button btn-login" onclick="window.location='{{ route('contato.form') }}'">Entrar</button>
+        <button class="auth-button btn-register" onclick="window.location='{{ route('contato.form') }}'">Criar Conta</button>
+    </div>
+        <div class="user-info" id="userInfo" style="display: none;">
+            <div class="user-avatar" id="userAvatar"></div>
+            <div class="user-name" id="userName"></div>
+            <button class="btn-logout" onclick="logout()">Sair</button>
+        </div>
+    </div>
+@endsection
+
 @section('content')
 <div class="curiosidades-container">
     <div class="curiosidades-header">
