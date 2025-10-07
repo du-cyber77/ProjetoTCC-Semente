@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sementes no Mapa</title>
+    <title>Arvores de Paracambi</title>
 
     {{-- CSS --}}
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
@@ -24,7 +24,7 @@
         <div class="header-container">
     
             <div class="header-logo">
-                <h1>Sementes no Mapa</h1>
+                <h1>Árvores de Paracambi</h1>
             </div>
         
             <nav class="header-nav">
@@ -49,8 +49,20 @@
 
     {{-- Rodapé --}}
     <footer>
-        &copy; 2025 Sementes no Mapa. Todos os direitos reservados.
+        &copy; 2025 Árvores de Paracambi. Todos os direitos reservados.
     </footer>
+
+ {{-- VLibras Widget --}}
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 
 </body>
 </html>

@@ -22,7 +22,7 @@
 
     <section class="sobre-hero">
       <span class="badge">História & Missão</span>
-      <h1>Sementes no Mapa em Paracambi</h1>
+      <h1>Árvores de Paracambi</h1>
       <p>
         Nossa iniciativa nasceu às margens do Rio dos Macacos, em Paracambi (RJ), a partir de uma pergunta simples:
         <em>e se cada morador pudesse apadrinhar uma árvore do seu bairro e acompanhar seus cuidados no mapa?</em>
@@ -52,7 +52,7 @@
         <div>
           <div class="timeline">
             <div class="step">
-              <strong>2021 – A faísca</strong>
+              <strong>2021 – A semente</strong>
               <p>Após uma cheia do Rio dos Macacos, um grupo de professores organizou mutirões de limpeza e percebeu o potencial de plantar árvores.</p>
             </div>
             <div class="step">
@@ -69,7 +69,7 @@
             </div>
             <div class="step">
               <strong>2025 – Hoje</strong>
-              <p>O Sementes no Mapa integra escolas, associações de moradores e trilhas de educação ambiental. Cada ponto é uma história de cuidado.</p>
+              <p>Árvores de Paracambi integra escolas, associações de moradores e trilhas de educação ambiental. Cada ponto é uma história de cuidado.</p>
             </div>
           </div>
         </div>
