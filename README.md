@@ -1,7 +1,6 @@
-🌳 Sementes no Mapa
+## 🌳 Sementes no Mapa
 
-
-🌍 Sobre o Projeto
+## 🌍 Sobre o Projeto
 
 "Sementes no Mapa" é uma aplicação web desenvolvida para conectar pessoas, escolas e áreas verdes na cidade de Paracambi, RJ. A iniciativa nasceu com o objetivo de permitir que cada morador possa "apadrinhar" uma árvore em seu bairro, acompanhando seus cuidados através de um mapa interativo e colaborativo.
 
