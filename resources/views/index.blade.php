@@ -15,6 +15,8 @@
     </div>
 @endsection
 
+oi
+
 {{-- Conteúdo principal da página --}}
 @section('content')
     <div class="container">
